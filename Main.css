@@ -1,0 +1,151 @@
+.center1 {
+    text-align: center;
+    margin: 0;
+    margin-top: 250px;
+    font-size: 60px;
+    font-weight: 40;
+    font-family: 'Courier New', Courier, monospace;
+  }
+h1{
+text-align: center;
+font-size: medium;
+}
+nav{
+  display: inline;
+    list-style-type: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color:salmon;
+}
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+.subheader{
+  background: transparent;
+  font-family: monospace;
+  text-align: center;
+  font-size: 20px;
+}
+Footer{
+  bottom: 0;
+  font-family: monospace;
+  font-size: small;
+  position: sticky;
+}
+/* Contact Form */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: green;
+  color: whitesmoke;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form*/ 
+.container {
+  border-radius: 5px;
+  background-color:transparent;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  margin: 20px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  padding: 40px;
+}
+.grid-item {
+  background-color: teal;
+  border: 1px solid rgba(0,0,0,0.8);
+  padding: 20px;
+  font-size: 30px;
+  size: 10px;
+  text-align: center;
+}

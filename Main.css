@@ -1,7 +1,7 @@
 .center1 {
     text-align: center;
     margin: 0;
-    margin-top: 250px;
+    margin-top: 175px;
     font-size: 60px;
     font-weight: 40;
     font-family: 'Courier New', Courier, monospace;
@@ -19,7 +19,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: transparent;
 }
 
 li {
@@ -34,7 +34,8 @@ li a {
   text-decoration: none;
 }
 li a:hover {
-  background-color:salmon;
+  background-color: grey;
+  height: 50px;
 }
 html {
   height:100%;
@@ -63,6 +64,7 @@ body {
 
 .bg3 {
   animation-duration:5s;
+  margin-top: 50px;
 }
 
 .content {
@@ -148,4 +150,26 @@ input[type=submit]:hover {
   font-size: 30px;
   size: 10px;
   text-align: center;
+}
+.profileimage{
+ border-radius: 50%;
+}
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: inline;
+  }
+}
+
+
+  .socialIcon {
+    height: 30px;
+    width: 30px;
+   
+}
+
+.nav-link{
+  height: 40px;
+  width: 80px;
+  text-decoration-color: black;
+ 
 }
